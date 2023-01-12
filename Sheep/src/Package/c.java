@@ -40,10 +40,12 @@ public enum c {
     CYAN_BG_BRIGHT("\033[0;106m"),      // CYAN
     WHITE_BG_BRIGHT("\033[0;107m");     // WHITE
 
+    
     private final String code;
     c(String code) {
         this.code = code;
     }
+
 
     @Override
     public String toString() {

@@ -5,9 +5,14 @@ public class App {
     public static final String bold = "\033[1m", dim = "\033[2m", italic = "\033[3m", underline = "\033[4m", reverse = "\033[7m", hidden = "\033[8m", strikethrough = "\033[9m";
     //doesnt work //blinking = "\033[5m", 
     public static void main(String[] args) {
-        System.out.printf("%s　%s　%s🐑%s\n",c.BLUE_BG,c.BLACK_BG,c.CYAN_BG,reset);
-        System.out.printf("%s%s　🐑hi%s\n",c.GREEN_BG,hidden,reset);
-        System.out.printf("%s%s　🐑hi%s\n",c.RED_BG_BRIGHT,hidden,reset);
+        c test = c.BLACK_BG_BRIGHT;
+        switch (test) {
+            case BLACK_BG_BRIGHT:
+                System.out.println("switch case statements!");
+                break;
+            default:
+                System.out.println("wtf happened");
+        }
     }
     
 }/*
