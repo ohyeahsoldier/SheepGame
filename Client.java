@@ -1,20 +1,13 @@
 
+
 public class Client {
+    public static final String reset = "\033[0m";
+    public static final String bold = "\033[1m", dim = "\033[2m", italic = "\033[3m", underline = "\033[4m", blinking = "\033[5m", reverse = "\033[7m", hidden = "\033[8m", strikethrough = "\033[9m";
     public static void main(String[] args) {
-        System.out.printf("%s　%s　\n",c.BLUE_BG,c.BLACK_BG);
-
-    }
-
-
-    public static final int black = 30, red = 31, green = 32, YELLOW = 33, BLUE = 34, MAGENTA = 35, CYAN = 36, WHITE = 37;
-    public static final int bold = 1, dim = 2, italic = 3, underline = 4, blinking = 5, reverse = 7, hidden = 8, strikethrough = 9;
-    public static String c(int base, boolean bg, boolean bright) {
-        if (bg)
-            base += 10;
-        if (bright)
-            base += 60;
         
-        return ("\033[%d");
+        System.out.printf("%s　%s　%s🐑%s\n",c.BLUE_BG,c.BLACK_BG,c.CYAN_BG,reset);
+
+        System.out.printf("%s%s　hi🐑%s\n",c.RED_BG,italic,reset);
     }
     
 }/*
