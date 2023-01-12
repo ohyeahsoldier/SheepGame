@@ -1,8 +1,7 @@
-import java.util.Formatter;
 
 public class Client {
     public static void main(String[] args) {
-        System.out.printf("%s　%s　\n",c.BLACK_DIM);
+        System.out.printf("%s　%s　\n",c.BLUE_BG,c.BLACK_BG);
 
     }
 
