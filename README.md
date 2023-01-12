@@ -1,6 +1,7 @@
 # SheepGame
 https://gist.github.com/fnky/458719343aabd01cfb17a3a4f7296797
 https://stackoverflow.com/questions/15682537/ansi-color-specific-rgb-sequence-bash
+https://geoffg.net/Downloads/Terminal/TerminalEscapeCodes.pdf
 
 ```bash
 for x in {0..255}; do echo -e "\033[48;5;${x}mColor　🐑 $x\033[0;0m"; done
