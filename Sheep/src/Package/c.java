@@ -1,4 +1,4 @@
-package Sheep.src;
+package Package;
 public enum c {
     // Regular Colors. Normal color, no bold, BG color etc.
     BLACK("\033[0;30m"),    // BLACK
