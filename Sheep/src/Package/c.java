@@ -1,6 +1,16 @@
 package Package;
 public enum c {
-    // Regular Colors. Normal color, no bold, BG color etc.
+    reset("\033[0m"),
+    bold("\033[1m"),
+    dim("\033[2m"),
+    italic("\033[3m"),
+    underline("\033[4m"), 
+    //doesnt work in vscode: //blinking("\033[5m"),
+    reverse("\033[7m"), 
+    hidden("\033[8m"), 
+    strikethrough("\033[9m"),
+
+    // Changes color of the text
     BLACK("\033[0;30m"),    // BLACK
     RED("\033[0;31m"),      // RED
     GREEN("\033[0;32m"),    // GREEN
@@ -10,7 +20,7 @@ public enum c {
     CYAN("\033[0;36m"),     // CYAN
     WHITE("\033[0;37m"),    // WHITE
 
-    // BG
+    // Changes color of the background -- like a Highlighter
     BLACK_BG("\033[40m"),   // BLACK
     RED_BG("\033[41m"),     // RED
     GREEN_BG("\033[42m"),   // GREEN
@@ -20,7 +30,7 @@ public enum c {
     CYAN_BG("\033[46m"),    // CYAN
     WHITE_BG("\033[47m"),   // WHITE
 
-    // High Intensity
+    // Changes color of text except "High Intensity"
     BLACK_BRIGHT("\033[0;90m"),     // BLACK
     RED_BRIGHT("\033[0;91m"),       // RED
     GREEN_BRIGHT("\033[0;92m"),     // GREEN
@@ -30,7 +40,7 @@ public enum c {
     CYAN_BRIGHT("\033[0;96m"),      // CYAN
     WHITE_BRIGHT("\033[0;97m"),     // WHITE
 
-    // High Intensity BGs
+    // Changes color of BackGround except "High Intensity"
     BLACK_BG_BRIGHT("\033[0;100m"),     // BLACK
     RED_BG_BRIGHT("\033[0;101m"),       // RED
     GREEN_BG_BRIGHT("\033[0;102m"),     // GREEN
@@ -40,12 +50,11 @@ public enum c {
     CYAN_BG_BRIGHT("\033[0;106m"),      // CYAN
     WHITE_BG_BRIGHT("\033[0;107m");     // WHITE
 
-    
+    //Look up how enums work, this is the constructor & variable
     private final String code;
     c(String code) {
         this.code = code;
     }
-
 
     @Override
     public String toString() {
