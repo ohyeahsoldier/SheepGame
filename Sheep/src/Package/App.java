@@ -21,12 +21,12 @@ public class App {
         printWorld();
         String INPUT = input.next();
 
-        while (!INPUT.equals("c") && SheepList.size()>d=0) {
+        while (!INPUT.equals("c") && SheepList.size()>=0) {
             moveSheep(SheepList.get(0),INPUT);
             printWorld();
             INPUT = input.next();
         }
-        System.out.println(c.RED_BG_BRIGHT+bold+"End"+reset);
+        System.out.printf("%s%sEnd%s",c.RED_BG_BRIGHT,c.bold,c.reset);
         input.close();
     }
     public static void printWorld() {
@@ -46,7 +46,7 @@ public class App {
                         }
                     }
                 }
-                System.out.print(World[y][x]+rendered+reset);
+                System.out.print(World[y][x]+rendered+c.reset);
             }
             System.out.println();
         }
